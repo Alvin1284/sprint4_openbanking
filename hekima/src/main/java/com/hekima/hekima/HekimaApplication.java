@@ -1,4 +1,4 @@
-package io.com.hekima.hekima;
+package com.hekima.hekima;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
