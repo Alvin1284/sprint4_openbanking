@@ -1,7 +1,7 @@
-package web;
+package com.hekima.hekima.web;
 
-import entity.Transaction;
-import query.TransactionService;
+import com.hekima.hekima.entity.Transaction;
+import com.hekima.hekima.query.TransactionService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -19,11 +19,25 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
+	compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.24'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+	testImplementation ('org.springframework.boot:spring-boot-starter-test:2.7.0'){
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+
+	testImplementation 'io.rest-assured:json-path:5.1.1'
+	testImplementation 'io.rest-assured:rest-assured:5.1.1'
+	testImplementation 'io.rest-assured:xml-path:5.1.1'
+	testImplementation 'io.rest-assured:json-schema-validator:5.1.1'
+	testImplementation 'io.rest-assured:spring-mock-mvc:5.1.1'
+	testImplementation 'io.rest-assured:spring-web-test-client:5.1.1'
 }
+
 
 tasks.named('test') {
 	useJUnitPlatform()

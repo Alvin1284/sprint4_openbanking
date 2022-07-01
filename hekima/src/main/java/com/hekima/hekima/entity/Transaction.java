@@ -1,4 +1,4 @@
-package entity;
+package com.hekima.hekima.entity;
 
 import lombok.Builder;
 import lombok.Data;

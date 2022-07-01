@@ -1,6 +1,6 @@
-package query;
+package com.hekima.hekima.query;
 
-import entity.Transaction;
+import com.hekima.hekima.entity.Transaction;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
