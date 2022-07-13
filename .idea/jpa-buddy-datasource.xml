@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="7fbcd5e5-2b65-4be0-8bdd-9a874533daac" name="ekeza" url="jdbc:mysql://localhost:3307/ekeza?allowPublicKeyRetrieval=true&amp;useSSL=false" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+  </component>
+</project>

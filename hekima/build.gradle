@@ -20,7 +20,23 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.7.0'
-	compileOnly 'org.projectlombok:lombok:1.18.24'
+
+	//JPA Dependency
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.0'
+	implementation 'mysql:mysql-connector-java:8.0.29'
+
+	//test containers dependency
+	testImplementation 'org.testcontainers:testcontainers:1.17.2'
+	testImplementation "org.testcontainers:junit-jupiter:1.17.2"
+	testImplementation "org.testcontainers:mysql:1.17.3"
+
+	//mariadb
+	testImplementation "org.testcontainers:mariadb:1.17.3"
+	implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '3.0.5'
+
+	testImplementation "com.squareup.okhttp3:mockwebserver:4.10.0"
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
 	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 
 	testCompileOnly 'org.projectlombok:lombok:1.18.24'
@@ -29,7 +45,7 @@ dependencies {
 	testImplementation ('org.springframework.boot:spring-boot-starter-test:2.7.0'){
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
-
+//Rest assured dependencies
 	testImplementation 'io.rest-assured:json-path:5.1.1'
 	testImplementation 'io.rest-assured:rest-assured:5.1.1'
 	testImplementation 'io.rest-assured:xml-path:5.1.1'
