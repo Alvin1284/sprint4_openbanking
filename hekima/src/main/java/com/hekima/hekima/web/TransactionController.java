@@ -3,15 +3,13 @@ package com.hekima.hekima.web;
 import com.hekima.hekima.entity.Transaction;
 import com.hekima.hekima.query.TransactionService;
 import com.hekima.hekima.web.dto.TransactionDto;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 import static java.util.stream.Collectors.toList;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/v1/transactions")
 public class TransactionController {
